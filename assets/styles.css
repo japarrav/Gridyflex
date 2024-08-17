@@ -6,8 +6,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-areas: 
-        "header header""aside main""footer footer";
+    grid-template-areas:
+        "header header" "aside main" "footer footer";
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
@@ -62,7 +62,7 @@ footer {
 
 .vertical-menu li:hover {
     background-color: #575757;
-    color:white
+    color: white
 }
 
 .products {
@@ -78,6 +78,7 @@ footer {
     width: calc(33.333% - 20px);
     box-sizing: border-box;
     text-align: center;
+    justify-content: center;
 }
 
 
@@ -86,7 +87,35 @@ footer {
     font-size: 18px;
 }
 
-img{
+img {
     height: 200px;
     width: 200px;
+}
+
+.btn-comprar {
+    background-color: #007bff;
+    /* Fondo azul */
+    color: white;
+    /* Texto en blanco */
+    padding: 10px20px;
+    text-align: center;
+    /* Alineación del texto */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    display: flex;
+    /* Flexbox para centrar el texto */
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    cursor: pointer;
+    /* Cambiar cursor a mano */
+    /* Ancho del botón */
+    height: 50px;
+    /* Alto del botón */
+}
+
+.btn-comprar:hover {
+    background-color: #0056b3;
+    /* Fondo más oscuro en hover */
 }
